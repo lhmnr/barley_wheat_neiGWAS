@@ -1,0 +1,5 @@
+A	SNP_taxa_chr_pos	C	link	info_1	info_2	info_3	paper	gene_chr_pos
+SNP	barley 6H 6096552	gene/transcript	http://plants.ensembl.org/Hordeum_vulgare/Transcript/Domains?db=core;g=HORVU.MOREX.r3.6HG0539420;r=6H:3096552-3496552;t=HORVU.MOREX.r3.6HG0539420.1	bulb-type lectin, PAN/apple, protein kinase, S-locus glycoprotein	binds mannose, involved in S-locus activity?, but no S-locus in barley?	.	.	6H:3366802-3369974
+SNP	barley 6H 6096552	gene/transcript	http://plants.ensembl.org/Hordeum_vulgare/Transcript/Domains?db=core;g=HORVU.MOREX.r3.6HG0539410;r=6H:3096552-3496552;t=HORVU.MOREX.r3.6HG0539410.1	protein OCTOPUS-like	involved in cell differentioation of phloem?	.	.	6H:3363240-3364184
+SNP	barley 6H 6096552	gene/transcript	http://plants.ensembl.org/Hordeum_vulgare/Transcript/Domains?db=core;g=HORVU.MOREX.r3.6HG0539390;r=6H:3096552-3496552;t=HORVU.MOREX.r3.6HG0539390.1	protein MAINTENANCE OF MERISTEMS-like	.	.	.	6H:3357160-3358347
+SNP	barley 6H 6096552	gene/transcript	http://plants.ensembl.org/Hordeum_vulgare/Transcript/Domains?db=core;g=HORVU.MOREX.r3.6HG0539400;r=6H:3096552-3496552;t=HORVU.MOREX.r3.6HG0539400.1	no information	.	.	.	6H:3360788-3361447

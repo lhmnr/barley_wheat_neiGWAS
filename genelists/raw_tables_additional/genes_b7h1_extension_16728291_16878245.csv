@@ -1,0 +1,4 @@
+A	SNP_taxa_chr_pos	C	link	info_1	info_2	info_3	paper	gene_chr_pos
+SNP	barley 7H 16784511	gene/transcript	http://plants.ensembl.org/Hordeum_vulgare/Transcript/Domains?db=core;g=HORVU.MOREX.r3.7HG0643470;r=7H:16728291-16878245;t=HORVU.MOREX.r3.7HG0643470.1	no information	.	.	.	7H:16857870-16858364
+SNP	barley 7H 16784511	gene/transcript	http://plants.ensembl.org/Hordeum_vulgare/Transcript/Summary?db=core;g=HORVU.MOREX.r3.7HG0643480;r=7H:16728291-16878245;t=HORVU.MOREX.r3.7HG0643480.1	no information	.	.	.	7H:16872759-16873121
+SNP	barley 7H 16784511	gene/transcript	http://plants.ensembl.org/Hordeum_vulgare/Transcript/Domains?db=core;g=HORVU.MOREX.r3.7HG0643370;r=7H:16728291-16878245;t=HORVU.MOREX.r3.7HG0643370.1	dynein light chain, type 1/2	.	.	.	7H:16741494-16741918

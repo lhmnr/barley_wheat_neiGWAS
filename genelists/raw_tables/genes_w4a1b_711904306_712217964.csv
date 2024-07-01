@@ -1,0 +1,4 @@
+A	SNP_taxa_chr_pos	C	link	info_1	info_2	info_3	paper	gene_chr_pos
+SNP	wheat 4A 711332059	gene/transcript	http://plants.ensembl.org/Triticum_aestivum/Transcript/Domains?db=core;g=TraesCS4A02G443400;r=4A:711904306-712217964;t=TraesCS4A02G443400.1	PPM-type phosphatase, protein phosphatase 2C	.	.	.	4A:711956840-711962428
+SNP	wheat 4A 711332059	gene/transcript	http://plants.ensembl.org/Triticum_aestivum/Transcript/Domains?db=core;g=TraesCS4A02G443500;r=4A:711904306-712217964;t=TraesCS4A02G443500.1	PPM-type phosphatase, protein phosphatase 2C	.	.	.	4A:711973703-711979247
+SNP	wheat 4A 711332059	gene/transcript	http://plants.ensembl.org/Triticum_aestivum/Transcript/Domains?db=core;g=TraesCS4A02G443600;r=4A:711904306-712217964;t=TraesCS4A02G443600.1	cytochrome P450	involved in molecule degradation, including toxins	.	.	4A:712111372-712113106

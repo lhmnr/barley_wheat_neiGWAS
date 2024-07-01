@@ -1,0 +1,4 @@
+A	SNP_taxa_chr_pos	C	link	info_1	info_2	info_3	paper	gene_chr_pos
+SNP	wheat 4A 701653464	gene/transcript	http://plants.ensembl.org/Triticum_aestivum/Transcript/Domains?db=core;g=TraesCS4A02G441000;r=4A:709851815-709865301;t=TraesCS4A02G441000.1	no information	.	.	.	4A:709851363-709852050
+SNP	wheat 4A 701653464	gene/transcript	http://plants.ensembl.org/Triticum_aestivum/Transcript/Domains?db=core;g=TraesCS4A02G441100;r=4A:709851815-709865301;t=TraesCS4A02G441100.1	no information	.	.	.	4A:709857665-709858144
+SNP	wheat 4A 701653464	gene/transcript	http://plants.ensembl.org/Triticum_aestivum/Transcript/Domains?db=core;g=TraesCS4A02G441200;r=4A:709851815-709865301;t=TraesCS4A02G441200.1	no information	.	.	.	4A:709863322-709863870

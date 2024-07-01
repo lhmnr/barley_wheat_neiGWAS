@@ -1,0 +1,3 @@
+A	SNP_taxa_chr_pos	C	link	info_1	info_2	info_3	paper	gene_chr_pos
+SNP	barley 6H 6096552	gene/transcript	http://plants.ensembl.org/Hordeum_vulgare/Transcript/Domains?db=core;g=HORVU.MOREX.r3.6HG0544470;r=6H:14687831-14786393;t=HORVU.MOREX.r3.6HG0544470.1	DNA/RNA polymerase, reverse transcriptase	has this some plant function or is it from retrovirus?	.	.	6H:14722443-14724965
+SNP	barley 6H 6096552	gene/transcript	http://plants.ensembl.org/Hordeum_vulgare/Transcript/Domains?db=core;g=HORVU.MOREX.r3.6HG0544530;r=6H:14687831-14786393;t=HORVU.MOREX.r3.6HG0544530.1	no information	.	.	.	6H: 14771277-14771771

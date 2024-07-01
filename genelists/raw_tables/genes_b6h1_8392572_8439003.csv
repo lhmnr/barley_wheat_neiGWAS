@@ -1,0 +1,3 @@
+A	SNP_taxa_chr_pos	C	link	info_1	info_2	info_3	paper	gene_chr_pos
+SNP	barley 6H 6096552	gene/transcript	http://plants.ensembl.org/Hordeum_vulgare/Transcript/Domains?db=core;g=HORVU.MOREX.r3.6HG0541440;r=6H:8296552-8696552;t=HORVU.MOREX.r3.6HG0541440.1	UDP-glucuronosyltransferase/UDP-glucosyltransferase	may be involved in pigment production	.	.	6H:8402063-8403744
+SNP	barley 6H 6096552	gene/transcript	http://plants.ensembl.org/Hordeum_vulgare/Transcript/Domains?db=core;g=HORVU.MOREX.r3.6HG0541450;r=6H:8296552-8696552;t=HORVU.MOREX.r3.6HG0541450.1	NAM-like	.	.	.	6H:8410730-8412627

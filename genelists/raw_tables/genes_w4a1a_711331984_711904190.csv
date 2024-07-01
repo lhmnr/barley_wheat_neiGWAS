@@ -1,0 +1,3 @@
+A	SNP_taxa_chr_pos	C	link	info_1	info_2	info_3	paper	gene_chr_pos
+SNP	wheat 4A 701653464	gene/transcript	http://plants.ensembl.org/Triticum_aestivum/Transcript/Domains?db=core;g=TraesCS4A02G443200;r=4A:711504190-711904190;t=TraesCS4A02G443200.1	AAA+ ATPase, Clp ATPase, ClpA/B, p-loop	.	.	.	4A:711778749-711781186
+SNP	wheat 4A 701653464	gene/transcript	http://plants.ensembl.org/Triticum_aestivum/Transcript/Domains?db=core;g=TraesCS4A02G443300;r=4A:711504190-711904190;t=TraesCS4A02G443300.1	AAA+ ATPase, Clp ATPase, ClpA/B, p-loop	.	.	.	4A:711839975-711842412

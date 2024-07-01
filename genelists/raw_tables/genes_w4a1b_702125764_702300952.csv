@@ -1,0 +1,3 @@
+A	SNP_taxa_chr_pos	C	link	info_1	info_2	info_3	paper	gene_chr_pos
+SNP	wheat 4A 711332059	gene/transcript	http://plants.ensembl.org/Triticum_aestivum/Transcript/Summary?db=core;g=TraesCS4A02G431454;r=4A:702125764-702367907;t=TraesCS4A02G431454.1	no information	.	.	.	4A:702171034-702173039
+SNP	wheat 4A 711332059	gene/transcript	http://plants.ensembl.org/Triticum_aestivum/Transcript/Domains?db=core;g=TraesCS4A02G431500;r=4A:702125764-702367907;t=TraesCS4A02G431500.1	aromatic-L-amino-acid decarboxylase, pyridoxal phosphate-dependent transferase	.	.	.	4A:702297055-702298965
