@@ -1,0 +1,243 @@
+
+#workflow (20240629)
+
+#this file contains a workflow guide on how to do each part of the analysis
+
+
+
+##########################################
+
+#### workflow main analysis
+
+#manually run scripts/1_prepare_geno_barley.R
+#run scripts/1_prepare_geno_wheat.R
+
+#run bgjobs/2b/2b_*.R
+
+cp results/barley/filtered_inputs/2*/*.csv results/barley/filtered_inputs/data_collection/
+cp results/wheat/filtered_inputs/2*/*.csv results/wheat/filtered_inputs/data_collection/
+
+#run bgjobs/2c/2c_*.R
+
+cp results/barley/neiGWAS/2*/neiGWAS_results_*.csv results/barley/neiGWAS/data_collection/
+cp results/wheat/neiGWAS/2*/neiGWAS_results_*.csv results/wheat/neiGWAS/data_collection/
+
+#run bgjobs/3/3_*.R
+
+#check output plots -> which phenos to use further?
+#MAF 1%: NFNB, ((PM,)) Blr, YR, YS
+#MAF 2%: NFNB, (PM,) Blr, Scald, YR, (YS)
+#MAF 5%: NFNB, (PM,) Blr, Scald, YR, YS
+#--> NFNB, (PM,) Blr, Scald-MAF5, YR, YS
+
+#run bgjobs/4/4_*.R
+
+cp results/barley/sigSNP/2*/*_sig_SNPs.csv results/barley/sigSNP/data_collection/
+cp results/wheat/sigSNP/2*/*_sig_SNPs.csv results/wheat/sigSNP/data_collection/
+
+#run bgjobs/5/5_*.R
+
+cp results/barley/selfGWAS_compare/2*/selfGWAS_results_*.csv results/barley/selfGWAS_compare/data_collection/
+cp results/wheat/selfGWAS_compare/2*/selfGWAS_results_*.csv results/wheat/selfGWAS_compare/data_collection/
+
+#run bgjobs/6/6_*.R
+
+#run bgjobs/7/7_*.R
+
+#run script/8_prepare_genelists.R
+
+#run bgjobs/9/9_*.R
+
+#run bgjobs/10/10_*.R
+
+
+
+##########################################
+
+#### workflow extended neiGWAS
+
+#run bgjobs/11a/11a_*.R
+
+cp results/barley/neiGWAS_extended/2*/neiGWAS_results_*.csv results/barley/neiGWAS_extended/data_collection_neiGWAS/
+cp results/wheat/neiGWAS_extended/2*/neiGWAS_results_*.csv results/wheat/neiGWAS_extended/data_collection_neiGWAS/
+
+#run bgjob/11b/11b_*.R
+
+#check output plots -> which phenos to use further?
+#--> NFNB, (PM,) Blr, Scald-MAF5, YR, YS
+
+#run bgjob/11c/11c_*.R
+
+
+
+##########################################
+
+#### workflow PVE partitioning
+
+#run bgjobs/12/12_*.R
+
+
+
+##########################################
+
+#### workflow PVE partitioning extended
+
+#run bgjobs/12b/12b_*.R
+
+#run bgjobs/12c/12c_*.R
+
+
+
+##########################################
+
+#### workflow asymmetric neiGWAS
+
+#run bgjobs/13a/13a_*.R
+
+cp results/barley/neiGWAS_asym/2*/neiGWAS_results_*.csv results/barley/neiGWAS_asym/data_collection/
+cp results/wheat/neiGWAS_asym/2*/neiGWAS_results_*.csv results/wheat/neiGWAS_asym/data_collection/
+
+#run bgjob/13b/13b_*.R
+
+#check output plots -> which phenos to use further?
+#--> NFNB, (NFNB-MAF5,) (PM,) Blr, (Scald,) Scald-MAF5, SFNB, (SFNB-MAF5,) YR, YS
+
+#run bgjob/13c/13c_*.R
+
+cp results/barley/sigSNP_asym/2*/*_nei_sig_SNPs_with_bases.csv results/barley/sigSNP_asym/data_collection/
+cp results/barley/sigSNP_asym/2*/*_sxn_sig_SNPs_with_bases.csv results/barley/sigSNP_asym/data_collection/
+cp results/wheat/sigSNP_asym/2*/*_nei_sig_SNPs_with_bases.csv results/wheat/sigSNP_asym/data_collection/
+cp results/wheat/sigSNP_asym/2*/*_sxn_sig_SNPs_with_bases.csv results/wheat/sigSNP_asym/data_collection/
+
+#run bgjob/13d/13d_*.R
+
+cp results/barley/sigSNP_asym/LD/2*/*_SNPwise_LD_of_sig_SNPs.csv results/barley/sigSNP_asym/LD/data_collection/
+cp results/wheat/sigSNP_asym/LD/2*/*_SNPwise_LD_of_sig_SNPs.csv results/wheat/sigSNP_asym/LD/data_collection/
+cp results/barley/sigSNP_asym/LD/2*/*_sig_SNPs_with_inter_LD.csv results/barley/sigSNP_asym/LD/data_collection/
+cp results/wheat/sigSNP_asym/LD/2*/*_sig_SNPs_with_inter_LD.csv results/wheat/sigSNP_asym/LD/data_collection/
+
+#run bgjob/13e/13e_*.R
+
+#run bgjob/13f/13f_*.R
+
+
+
+##########################################
+
+#### workflow PVE partitioning for asymmetric neiGWAS
+
+#run bgjobs/13g/13g_*.R
+
+
+
+##########################################
+
+#### workflow field analsys
+
+#run bgjobs/15/15_*.R
+
+
+
+##########################################
+
+#### list of scripts
+
+#1_prepare_geno_barley.R
+#This script prepares the genotypes of barley from the vcf file to a usable csv.
+
+#1_prepare_geno_wheat.R
+#This script prepares the genotypes of wheat from the vcf file to a usable csv.
+
+#runBEAGLE.sh
+#...
+
+#2a_manual_neiGWAS_barley.R
+#2a_manual_neiGWAS_wheat.R
+#With this script, neighbor GWAS can be run individually for a desired neighbour distance and custom settings.
+#It is for exploration and not required for the analysis.
+
+#2b_filter_experiments_barley.R
+#2b_filter_experiments_wheat.R
+#These scripts prepare the input data so that it does not have to be done again in each further script.
+#This also unifies the input, allowing all further scripts to handle barley and wheat equally.
+#The MAF has to be defined here.
+
+#2c_automated_neiGWAS.R
+#This script does the basic neighbor GWAS. It is meant to be used for all disease phenotypes to generate first results. It also plots the "top SNPs".
+
+#3_SNP_analysis.R
+#This script extracts the SNPs that pass the bonferrroni-corrected 5%-threshold for all disease phenotypes of a species together. Therefore, it should be run after 2c has been run for all disease phenotypes.
+#Its purpose is to choose which disease phenotypes should be used in further scripts; disease phenotypes that do not contain any significant results can be excluded.
+
+#4_sigSNP_LD.R
+#This script calculates linkage disequilibrium between significant SNPs and from significant SNPs to their surrounding, to give an overview of the linkage extent.
+#Based on this, gene search ranges should be estimated. Output of 6 may additionally help.
+
+#5_effect+selfGWAS.R
+#This script does two things, which both require neighbor GWAS to be run again with additional output.
+#It generates effect sizes, and extracts the them and the alleles/bases for the significant SNPs.
+#It generates p-values for the normal/"self" GWAS to compare with the neighbour p-values.
+
+#6_region_heatmap.R
+#This script calculates linkage disequilibrium in the region around significant SNPs and generates different heatmaps, to give a more complete overview of the local situation.
+
+#7_LD_chromosome.R
+#This script calculates linkage disequilibrium between all SNPs per chromosome.
+#Note that these values differ between disease phenotypes as different accessions are included.
+
+#8_prepare_genelists.R
+#This script prepares transcript lists and creates plots.
+
+#9_gene_analysis.R
+#This script links transcript lists with sig. SNPs and creates plots.
+
+#10_gene_mapping.R
+#This script integrates all information of locus to make plots.
+
+#11a_automated_neiGWAS_extended.R
+#This script does the same as 2c, but for further neighbour distances.
+
+#11b_SNP_analysis_extended.R
+#...
+
+#11c_effect_extended.R
+#...
+
+#12_PVE_analysis.R
+#...
+
+#12b_PVE_analysis_extended.R
+#...
+
+#12c_PVE_sigSNP_plot.R
+#...
+
+#13a_asymmetric_neiGWAS.R
+#...
+
+#13b_asym_SNP_analysis.R
+#...
+
+#13c_asym_sigSNP_effect.R
+#...
+
+#13d_asym_sigSNP_LD.R
+#...
+
+#13e_asym_automated_searchrange.R
+#...
+
+#13f_asym_region_heatmap.R
+#...
+
+#13g_asym_PVE_analysis.R
+#...
+
+#13h_PVE_without_sigSNP.R
+#...
+
+#15_field_analysis.R
+#...
+
+#17_interpheno_compare.R
+#...
